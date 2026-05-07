@@ -2295,8 +2295,7 @@ body.surface-landing #dumbo-octopus-layer { opacity: 0; }
   overflow: hidden;
 }
 
-.scanner-corners::before,
-.scanner-corners::after,
+
 .scanner-field-frame::before,
 .scanner-field-frame::after {
   content: "";
@@ -2311,6 +2310,11 @@ body.surface-landing #dumbo-octopus-layer { opacity: 0; }
 .scanner-field-frame::after { top: 18px; right: 18px; border-top: 5px solid; border-right: 5px solid; }
 .scanner-corners::before { bottom: 18px; left: 18px; border-bottom: 5px solid; border-left: 5px solid; }
 .scanner-corners::after { bottom: 18px; right: 18px; border-bottom: 5px solid; border-right: 5px solid; }
+
+.scanner-corners::before,
+.scanner-corners::after {
+  display: none;
+}
 
 .scanner-laser {
   position: absolute;
